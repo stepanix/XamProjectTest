@@ -26,6 +26,8 @@ namespace XamProjectTest
 		
 		public static void UpdateIdValues()
 		{
+			global::PCLStorage.Resource.String.ApplicationName = global::XamProjectTest.Resource.String.ApplicationName;
+			global::PCLStorage.Resource.String.Hello = global::XamProjectTest.Resource.String.Hello;
 		}
 		
 		public partial class Attribute
