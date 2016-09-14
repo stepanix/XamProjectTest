@@ -30,5 +30,13 @@ namespace XamProjectTest.utils
             return userToken;
         }
 
+        public static void clearUserToken(Context context)
+        {
+            ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(context);
+            ISharedPreferencesEditor editor = prefs.Edit();
+            editor.PutString("token", "");
+            editor.Apply();
+        }
+
     }
 }

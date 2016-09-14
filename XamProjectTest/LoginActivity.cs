@@ -60,6 +60,7 @@ namespace XamProjectTest
                 //Store Bearer Token then proceed to next screen
                 SharedPreferencesHelper.storeUserToken(this, userToken);
                 StartActivity(typeof(BaseActivity));
+                this.Finish();
             }
             catch (Exception ex)
             {

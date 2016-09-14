@@ -5,15 +5,14 @@ using Android.App;
 using Android.OS;
 using Android.Support.V4.Widget;
 using Android.Support.V7.App;
-using Android.Support.V7.Widget;
 using Android.Support.Design.Widget;
-using Android;
 using XamProjectTest.utils;
 using Android.Views;
+using Android.Content;
 
 namespace XamProjectTest.activity
 {
-    [Activity(Label = "XAM Project Test" , MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "XAM Project Test" , AlwaysRetainTaskState = false, LaunchMode = Android.Content.PM.LaunchMode.SingleInstance, MainLauncher = true, Icon = "@drawable/icon")]
     public class BaseActivity : AppCompatActivity
     {
         DrawerLayout drawerLayout;
@@ -25,7 +24,7 @@ namespace XamProjectTest.activity
             //Check if user logged in successfully previously by checking if token is present
             if (SharedPreferencesHelper.retrieveUserToken(this).Trim().Length<2)
             {
-                StartActivity(typeof(LoginActivity));
+                logOut();
             }
 
              drawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
@@ -77,13 +76,27 @@ namespace XamProjectTest.activity
                     //do something
                     return true;
                 case Resource.Id.nav_logout:
-                    //do something
+                    //Call logout method
+                    logOut();
                     return true;
             }
             return base.OnOptionsItemSelected(item);
         }
 
-        //private vo
+        private void logOut()
+        {
+            //Clear stored user token
+            SharedPreferencesHelper.clearUserToken(this);
+            //Return to Login Screen
+            var IntentLogin = new Intent(this, typeof(LoginActivity));
+            IntentLogin.AddFlags(ActivityFlags.ClearTop);
+            IntentLogin.AddFlags(ActivityFlags.ClearTask);
+            IntentLogin.AddFlags(ActivityFlags.NewTask);
+            IntentLogin.AddFlags(ActivityFlags.NoHistory);
+            StartActivity(IntentLogin);            
+            this.Finish();
+
+        }
 
     }
 }
