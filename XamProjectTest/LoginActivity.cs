@@ -13,6 +13,7 @@ using Refit;
 using XamProjectTest.service;
 using XamProjectTest.model;
 using XamProjectTest.utils;
+using XamProjectTest.activity;
 
 namespace XamProjectTest
 {
@@ -56,9 +57,9 @@ namespace XamProjectTest
                 if (progressDialog.IsShowing)
                     progressDialog.Dismiss();
 
-                //Store Bearer Token then proceed to next screen (Work in progress)
+                //Store Bearer Token then proceed to next screen
                 SharedPreferencesHelper.storeUserToken(this, userToken);
-                Toast.MakeText(this, userToken.Token, ToastLength.Long).Show();
+                StartActivity(typeof(BaseActivity));
             }
             catch (Exception ex)
             {
@@ -66,7 +67,7 @@ namespace XamProjectTest
                 if (progressDialog.IsShowing)
                     progressDialog.Cancel();
                 Android.Content.Res.Resources res = this.Resources;
-                Toast.MakeText(this, res.GetString(Resource.String.error_message) + " "+  ex.ToString(), ToastLength.Long).Show();
+                Toast.MakeText(this, res.GetString(Resource.String.error_message), ToastLength.Long).Show();
             }
 
         }

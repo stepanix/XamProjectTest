@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorDarkOrange">#FF5722</color>
+  <color name="colorPlainGrey">#616161</color>
+  <color name="colorPrimary">#3F51B5</color>
+  <color name="colorPrimaryDark">#1E90FF</color>
+  <color name="colorMain">#009933</color>
+  <color name="colorAccent">#FF4081</color>
+  <color name="colorGreen">#009933</color>
+  <color name="colorBlack">#000000</color>
+  <color name="colorOrange">#ff8000</color>
+  <color name="colorGrey">#bdbdbd</color>
+  <color name="colorRed">#FF0000</color>
+  <color name="colorLemonGreen">#78e779</color>
+  <color name="colorTintGray">#4d4d4d</color>
+  <color name="colorDarkGray">#a8a8a8</color>
+  <color name="colorGreenButton">#6ba200</color>
+  <color name="colorTopfanz">#34465d</color>
+  <color name="colorAsh">#606c88</color>
+  <color name="colorTitanium">#414345</color>
+  <color name="colorDarkRed">#800000</color>
+  <color name="colorGold">#ccac00</color>
+  <color name="colorWhite">#FFFFFF</color>
+  <color name="colorTranslucent">#80000000</color>
+  <color name="colorTextDefault">#7e7e7e</color>
+  <color name="colorBackgroundDefault">#f9f9f9</color>
+  <color name="colorBackground">#cfd8dc</color>
+  <color name="colorHeader">#263238</color>
+  <color name="colorNavBarHeader">#000d1a</color>
+  <color name="colorYellow">#FFF380</color>
+  <color name="colorDarkYellow">#E9AB17</color>
+  <color name="colorTabText">#283d4b</color>
+  <color name="colorPurple">#6A1B9A</color>
+  <color name="colorTransparent">#80000000</color>
+  <color name="colorChallengers">#03A9F4</color>
+</resources>

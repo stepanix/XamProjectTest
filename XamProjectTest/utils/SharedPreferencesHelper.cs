@@ -15,7 +15,6 @@ namespace XamProjectTest.utils
 {
     public class SharedPreferencesHelper
     {
-        private static string BEARER_TOKEN_SETTINGS = "BearerTokenSettings";
         public static void storeUserToken(Context context, model.UserToken userToken)
         {
             ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(context);

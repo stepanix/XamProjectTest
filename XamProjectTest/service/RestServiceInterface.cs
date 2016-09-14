@@ -22,7 +22,6 @@ namespace XamProjectTest.service
         [Post("/api-token-auth/")]
         Task<UserToken> postLogin([Body(BodySerializationMethod.UrlEncoded)] Dictionary<string, object> loginDetails);
 
-
         //End point to get all projects
         [Post("/projects/")]
         Task<string> getProjects();
@@ -31,7 +30,8 @@ namespace XamProjectTest.service
         [Post("/projects/")]
         Task<Project> createProject([Header("Authorization")] string authorization, [Body] Project project);
 
-
-
+        //End point to update an existing project
+        [Put("/projects/")]
+        Task<Project> updateProject([Header("Authorization")] string authorization, [Body] Project project);
     }
 }
