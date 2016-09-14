@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+  <group android:checkableBehavior="single">
+    <item
+    android:id="@+id/nav_rateapp"
+    android:title="@string/mnu_rateapp" />
+    <item
+    android:id="@+id/nav_listprojects"
+    android:title="@string/mnu_listprojects" />
+    <item
+    android:id="@+id/nav_addproject"
+    android:title="@string/mnu_addproject" />    
+  </group>
+</menu>

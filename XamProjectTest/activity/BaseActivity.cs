@@ -8,10 +8,12 @@ using Android.Support.V7.App;
 using Android.Support.V7.Widget;
 using Android.Support.Design.Widget;
 using Android;
+using XamProjectTest.utils;
+using Android.Views;
 
 namespace XamProjectTest.activity
 {
-    [Activity(Label = "XAM Project Test")]
+    [Activity(Label = "XAM Project Test" , MainLauncher = true, Icon = "@drawable/icon")]
     public class BaseActivity : AppCompatActivity
     {
         DrawerLayout drawerLayout;
@@ -20,7 +22,13 @@ namespace XamProjectTest.activity
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Base);
-            drawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
+            //Check if user logged in successfully previously by checking if token is present
+            if (SharedPreferencesHelper.retrieveUserToken(this).Trim().Length<2)
+            {
+                StartActivity(typeof(LoginActivity));
+            }
+
+             drawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
 
             // Init toolbar
             var toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
@@ -54,6 +62,28 @@ namespace XamProjectTest.activity
             // Close drawer
             drawerLayout.CloseDrawers();
         }
+
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            MenuInflater.Inflate(Resource.Menu.menu, menu);
+            return base.OnPrepareOptionsMenu(menu);
+        }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            switch (item.ItemId)
+            {
+                case Resource.Id.nav_settings:
+                    //do something
+                    return true;
+                case Resource.Id.nav_logout:
+                    //do something
+                    return true;
+            }
+            return base.OnOptionsItemSelected(item);
+        }
+
+        //private vo
 
     }
 }

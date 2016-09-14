@@ -313,6 +313,18 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f0100a3
 			public const int checkedTextViewStyle = 2130772131;
 			
+			// aapt resource value: 0x7f01012f
+			public const int civ_border_color = 2130772271;
+			
+			// aapt resource value: 0x7f010130
+			public const int civ_border_overlay = 2130772272;
+			
+			// aapt resource value: 0x7f01012e
+			public const int civ_border_width = 2130772270;
+			
+			// aapt resource value: 0x7f010131
+			public const int civ_fill_color = 2130772273;
+			
 			// aapt resource value: 0x7f0100c5
 			public const int closeIcon = 2130772165;
 			
@@ -1986,118 +1998,121 @@ namespace XamProjectTest
 			public const int abc_textfield_search_material = 2130837578;
 			
 			// aapt resource value: 0x7f02004b
-			public const int design_fab_background = 2130837579;
+			public const int blank = 2130837579;
 			
 			// aapt resource value: 0x7f02004c
-			public const int design_snackbar_background = 2130837580;
+			public const int design_fab_background = 2130837580;
 			
 			// aapt resource value: 0x7f02004d
-			public const int ic_cast_dark = 2130837581;
+			public const int design_snackbar_background = 2130837581;
 			
 			// aapt resource value: 0x7f02004e
-			public const int ic_cast_disabled_light = 2130837582;
+			public const int ic_cast_dark = 2130837582;
 			
 			// aapt resource value: 0x7f02004f
-			public const int ic_cast_light = 2130837583;
+			public const int ic_cast_disabled_light = 2130837583;
 			
 			// aapt resource value: 0x7f020050
-			public const int ic_cast_off_light = 2130837584;
+			public const int ic_cast_light = 2130837584;
 			
 			// aapt resource value: 0x7f020051
-			public const int ic_cast_on_0_light = 2130837585;
+			public const int ic_cast_off_light = 2130837585;
 			
 			// aapt resource value: 0x7f020052
-			public const int ic_cast_on_1_light = 2130837586;
+			public const int ic_cast_on_0_light = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int ic_cast_on_2_light = 2130837587;
+			public const int ic_cast_on_1_light = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int ic_cast_on_light = 2130837588;
+			public const int ic_cast_on_2_light = 2130837588;
 			
 			// aapt resource value: 0x7f020055
-			public const int ic_media_pause = 2130837589;
+			public const int ic_cast_on_light = 2130837589;
 			
 			// aapt resource value: 0x7f020056
-			public const int ic_media_play = 2130837590;
+			public const int ic_media_pause = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int ic_media_route_disabled_mono_dark = 2130837591;
+			public const int ic_media_play = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int ic_media_route_off_mono_dark = 2130837592;
+			public const int ic_media_route_disabled_mono_dark = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int ic_media_route_on_0_mono_dark = 2130837593;
+			public const int ic_media_route_off_mono_dark = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int ic_media_route_on_1_mono_dark = 2130837594;
+			public const int ic_media_route_on_0_mono_dark = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int ic_media_route_on_2_mono_dark = 2130837595;
+			public const int ic_media_route_on_1_mono_dark = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int ic_media_route_on_mono_dark = 2130837596;
+			public const int ic_media_route_on_2_mono_dark = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int ic_pause_dark = 2130837597;
+			public const int ic_media_route_on_mono_dark = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int ic_pause_light = 2130837598;
+			public const int ic_pause_dark = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int ic_play_dark = 2130837599;
+			public const int ic_pause_light = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int ic_play_light = 2130837600;
+			public const int ic_play_dark = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int ic_setting_dark = 2130837601;
+			public const int ic_play_light = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int ic_setting_light = 2130837602;
+			public const int ic_setting_dark = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int Icon = 2130837603;
+			public const int ic_setting_light = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int mr_ic_cast_dark = 2130837604;
+			public const int Icon = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int mr_ic_cast_light = 2130837605;
+			public const int mr_ic_cast_dark = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int mr_ic_media_route_connecting_mono_dark = 2130837606;
+			public const int mr_ic_cast_light = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int mr_ic_media_route_connecting_mono_light = 2130837607;
+			public const int mr_ic_media_route_connecting_mono_dark = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int mr_ic_media_route_mono_dark = 2130837608;
+			public const int mr_ic_media_route_connecting_mono_light = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int mr_ic_media_route_mono_light = 2130837609;
+			public const int mr_ic_media_route_mono_dark = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int mr_ic_pause_dark = 2130837610;
+			public const int mr_ic_media_route_mono_light = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int mr_ic_pause_light = 2130837611;
+			public const int mr_ic_pause_dark = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int mr_ic_play_dark = 2130837612;
+			public const int mr_ic_pause_light = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int mr_ic_play_light = 2130837613;
+			public const int mr_ic_play_dark = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
-			public const int mr_ic_settings_dark = 2130837614;
+			public const int mr_ic_play_light = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int mr_ic_settings_light = 2130837615;
+			public const int mr_ic_settings_dark = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int notification_template_icon_bg = 2130837616;
+			public const int mr_ic_settings_light = 2130837616;
+			
+			// aapt resource value: 0x7f020071
+			public const int notification_template_icon_bg = 2130837617;
 			
 			static Drawable()
 			{
@@ -2112,11 +2127,11 @@ namespace XamProjectTest
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060079
-			public const int MyButton = 2131099769;
+			// aapt resource value: 0x7f06007a
+			public const int MyButton = 2131099770;
 			
-			// aapt resource value: 0x7f060088
-			public const int action0 = 2131099784;
+			// aapt resource value: 0x7f060089
+			public const int action0 = 2131099785;
 			
 			// aapt resource value: 0x7f06005a
 			public const int action_bar = 2131099738;
@@ -2142,8 +2157,8 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f06005b
 			public const int action_context_bar = 2131099739;
 			
-			// aapt resource value: 0x7f06008c
-			public const int action_divider = 2131099788;
+			// aapt resource value: 0x7f06008d
+			public const int action_divider = 2131099789;
 			
 			// aapt resource value: 0x7f060003
 			public const int action_menu_divider = 2131099651;
@@ -2169,8 +2184,8 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f06001e
 			public const int always = 2131099678;
 			
-			// aapt resource value: 0x7f060080
-			public const int art = 2131099776;
+			// aapt resource value: 0x7f060081
+			public const int art = 2131099777;
 			
 			// aapt resource value: 0x7f06001b
 			public const int beginning = 2131099675;
@@ -2178,17 +2193,17 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f06002a
 			public const int bottom = 2131099690;
 			
-			// aapt resource value: 0x7f060078
-			public const int btnLogin = 2131099768;
+			// aapt resource value: 0x7f060079
+			public const int btnLogin = 2131099769;
 			
 			// aapt resource value: 0x7f060044
 			public const int buttonPanel = 2131099716;
 			
-			// aapt resource value: 0x7f060085
-			public const int buttons = 2131099781;
+			// aapt resource value: 0x7f060086
+			public const int buttons = 2131099782;
 			
-			// aapt resource value: 0x7f060089
-			public const int cancel_action = 2131099785;
+			// aapt resource value: 0x7f06008a
+			public const int cancel_action = 2131099786;
 			
 			// aapt resource value: 0x7f06002b
 			public const int center = 2131099691;
@@ -2202,8 +2217,8 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f060052
 			public const int checkbox = 2131099730;
 			
-			// aapt resource value: 0x7f06008f
-			public const int chronometer = 2131099791;
+			// aapt resource value: 0x7f060090
+			public const int chronometer = 2131099792;
 			
 			// aapt resource value: 0x7f060033
 			public const int clip_horizontal = 2131099699;
@@ -2229,8 +2244,8 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f060040
 			public const int default_activity_button = 2131099712;
 			
-			// aapt resource value: 0x7f06007f
-			public const int default_control_frame = 2131099775;
+			// aapt resource value: 0x7f060080
+			public const int default_control_frame = 2131099776;
 			
 			// aapt resource value: 0x7f06006d
 			public const int design_bottom_sheet = 2131099757;
@@ -2250,8 +2265,8 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f06000e
 			public const int disableHome = 2131099662;
 			
-			// aapt resource value: 0x7f060086
-			public const int disconnect = 2131099782;
+			// aapt resource value: 0x7f060087
+			public const int disconnect = 2131099783;
 			
 			// aapt resource value: 0x7f060069
 			public const int drawer_layout = 2131099753;
@@ -2259,17 +2274,17 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f06005c
 			public const int edit_query = 2131099740;
 			
-			// aapt resource value: 0x7f060076
-			public const int edtPassword = 2131099766;
+			// aapt resource value: 0x7f060077
+			public const int edtPassword = 2131099767;
 			
-			// aapt resource value: 0x7f060075
-			public const int edtUserName = 2131099765;
+			// aapt resource value: 0x7f060076
+			public const int edtUserName = 2131099766;
 			
 			// aapt resource value: 0x7f06001c
 			public const int end = 2131099676;
 			
-			// aapt resource value: 0x7f060094
-			public const int end_padder = 2131099796;
+			// aapt resource value: 0x7f060095
+			public const int end_padder = 2131099797;
 			
 			// aapt resource value: 0x7f060023
 			public const int enterAlways = 2131099683;
@@ -2313,8 +2328,8 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f06003f
 			public const int image = 2131099711;
 			
-			// aapt resource value: 0x7f060093
-			public const int info = 2131099795;
+			// aapt resource value: 0x7f060094
+			public const int info = 2131099796;
 			
 			// aapt resource value: 0x7f060000
 			public const int item_touch_helper_previous_elevation = 2131099648;
@@ -2322,11 +2337,11 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f06002f
 			public const int left = 2131099695;
 			
-			// aapt resource value: 0x7f06008d
-			public const int line1 = 2131099789;
+			// aapt resource value: 0x7f06008e
+			public const int line1 = 2131099790;
 			
-			// aapt resource value: 0x7f060091
-			public const int line3 = 2131099793;
+			// aapt resource value: 0x7f060092
+			public const int line3 = 2131099794;
 			
 			// aapt resource value: 0x7f06000b
 			public const int listMode = 2131099659;
@@ -2334,23 +2349,23 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f060041
 			public const int list_item = 2131099713;
 			
-			// aapt resource value: 0x7f060077
-			public const int login = 2131099767;
+			// aapt resource value: 0x7f060078
+			public const int login = 2131099768;
 			
-			// aapt resource value: 0x7f06008b
-			public const int media_actions = 2131099787;
+			// aapt resource value: 0x7f06008c
+			public const int media_actions = 2131099788;
 			
-			// aapt resource value: 0x7f06007e
-			public const int media_route_control_frame = 2131099774;
+			// aapt resource value: 0x7f06007f
+			public const int media_route_control_frame = 2131099775;
 			
-			// aapt resource value: 0x7f06007a
-			public const int media_route_list = 2131099770;
-			
-			// aapt resource value: 0x7f060083
-			public const int media_route_volume_layout = 2131099779;
+			// aapt resource value: 0x7f06007b
+			public const int media_route_list = 2131099771;
 			
 			// aapt resource value: 0x7f060084
-			public const int media_route_volume_slider = 2131099780;
+			public const int media_route_volume_layout = 2131099780;
+			
+			// aapt resource value: 0x7f060085
+			public const int media_route_volume_slider = 2131099781;
 			
 			// aapt resource value: 0x7f06001d
 			public const int middle = 2131099677;
@@ -2361,14 +2376,20 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f060016
 			public const int multiply = 2131099670;
 			
+			// aapt resource value: 0x7f060098
+			public const int nav_addproject = 2131099800;
+			
 			// aapt resource value: 0x7f060097
-			public const int nav_addproject = 2131099799;
+			public const int nav_listprojects = 2131099799;
+			
+			// aapt resource value: 0x7f06009a
+			public const int nav_logout = 2131099802;
 			
 			// aapt resource value: 0x7f060096
-			public const int nav_listprojects = 2131099798;
+			public const int nav_rateapp = 2131099798;
 			
-			// aapt resource value: 0x7f060095
-			public const int nav_rateapp = 2131099797;
+			// aapt resource value: 0x7f060099
+			public const int nav_settings = 2131099801;
 			
 			// aapt resource value: 0x7f06006b
 			public const int nav_view = 2131099755;
@@ -2394,8 +2415,11 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f060029
 			public const int pin = 2131099689;
 			
-			// aapt resource value: 0x7f060081
-			public const int play_pause = 2131099777;
+			// aapt resource value: 0x7f060082
+			public const int play_pause = 2131099778;
+			
+			// aapt resource value: 0x7f060075
+			public const int profile_image = 2131099765;
 			
 			// aapt resource value: 0x7f060006
 			public const int progress_circular = 2131099654;
@@ -2409,8 +2433,8 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f060030
 			public const int right = 2131099696;
 			
-			// aapt resource value: 0x7f06007c
-			public const int route_name = 2131099772;
+			// aapt resource value: 0x7f06007d
+			public const int route_name = 2131099773;
 			
 			// aapt resource value: 0x7f060017
 			public const int screen = 2131099671;
@@ -2463,8 +2487,8 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f060068
 			public const int select_dialog_listview = 2131099752;
 			
-			// aapt resource value: 0x7f06007d
-			public const int settings = 2131099773;
+			// aapt resource value: 0x7f06007e
+			public const int settings = 2131099774;
 			
 			// aapt resource value: 0x7f060053
 			public const int shortcut = 2131099731;
@@ -2505,38 +2529,38 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f060031
 			public const int start = 2131099697;
 			
-			// aapt resource value: 0x7f06008a
-			public const int status_bar_latest_event_content = 2131099786;
+			// aapt resource value: 0x7f06008b
+			public const int status_bar_latest_event_content = 2131099787;
 			
-			// aapt resource value: 0x7f060087
-			public const int stop = 2131099783;
+			// aapt resource value: 0x7f060088
+			public const int stop = 2131099784;
 			
 			// aapt resource value: 0x7f060065
 			public const int submit_area = 2131099749;
 			
-			// aapt resource value: 0x7f060082
-			public const int subtitle = 2131099778;
+			// aapt resource value: 0x7f060083
+			public const int subtitle = 2131099779;
 			
 			// aapt resource value: 0x7f06000d
 			public const int tabMode = 2131099661;
 			
-			// aapt resource value: 0x7f060092
-			public const int text = 2131099794;
+			// aapt resource value: 0x7f060093
+			public const int text = 2131099795;
 			
-			// aapt resource value: 0x7f060090
-			public const int text2 = 2131099792;
+			// aapt resource value: 0x7f060091
+			public const int text2 = 2131099793;
 			
 			// aapt resource value: 0x7f06004d
 			public const int textSpacerNoButtons = 2131099725;
 			
-			// aapt resource value: 0x7f06008e
-			public const int time = 2131099790;
+			// aapt resource value: 0x7f06008f
+			public const int time = 2131099791;
 			
 			// aapt resource value: 0x7f060043
 			public const int title = 2131099715;
 			
-			// aapt resource value: 0x7f06007b
-			public const int title_bar = 2131099771;
+			// aapt resource value: 0x7f06007c
+			public const int title_bar = 2131099772;
 			
 			// aapt resource value: 0x7f060048
 			public const int title_template = 2131099720;
@@ -2797,7 +2821,10 @@ namespace XamProjectTest
 		{
 			
 			// aapt resource value: 0x7f0c0000
-			public const int menu = 2131492864;
+			public const int drawer_menu = 2131492864;
+			
+			// aapt resource value: 0x7f0c0001
+			public const int menu = 2131492865;
 			
 			static Menu()
 			{
@@ -4791,6 +4818,24 @@ namespace XamProjectTest
 			
 			// aapt resource value: 9
 			public const int CardView_contentPaddingTop = 9;
+			
+			public static int[] CircleImageView = new int[] {
+					2130772270,
+					2130772271,
+					2130772272,
+					2130772273};
+			
+			// aapt resource value: 1
+			public const int CircleImageView_civ_border_color = 1;
+			
+			// aapt resource value: 2
+			public const int CircleImageView_civ_border_overlay = 2;
+			
+			// aapt resource value: 0
+			public const int CircleImageView_civ_border_width = 0;
+			
+			// aapt resource value: 3
+			public const int CircleImageView_civ_fill_color = 3;
 			
 			public static int[] CollapsingAppBarLayout_LayoutParams = new int[] {
 					2130772206,

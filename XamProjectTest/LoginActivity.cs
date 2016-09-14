@@ -17,7 +17,7 @@ using XamProjectTest.activity;
 
 namespace XamProjectTest
 {
-    [Activity(Label = "Xam Project Test", MainLauncher = true, Icon = "@drawable/icon")]   
+    [Activity(Label = "Xam Project Test")]   
     public class LoginActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
