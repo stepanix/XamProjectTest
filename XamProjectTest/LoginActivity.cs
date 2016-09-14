@@ -16,7 +16,6 @@ using XamProjectTest.utils;
 
 namespace XamProjectTest
 {
-
     [Activity(Label = "Xam Project Test", MainLauncher = true, Icon = "@drawable/icon")]   
     public class LoginActivity : Activity
     {
