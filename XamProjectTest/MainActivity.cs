@@ -8,7 +8,8 @@ using Android.OS;
 
 namespace XamProjectTest
 {
-    [Activity(Label = "XamProjectTest", MainLauncher = true, Icon = "@drawable/icon")]
+    //[Activity(Label = "Xam Project Test", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "")]
     public class MainActivity : Activity
     {
         int count = 1;

@@ -13,7 +13,7 @@ using Newtonsoft.Json;
 
 namespace XamProjectTest.model
 {
-    public class Projects
+    public class Project
     {
 
         [JsonProperty("pk")]

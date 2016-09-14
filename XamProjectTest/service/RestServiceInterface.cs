@@ -11,6 +11,7 @@ using Android.Views;
 using Android.Widget;
 using Refit;
 using System.Threading.Tasks;
+using XamProjectTest.model;
 
 namespace XamProjectTest.service
 {
@@ -23,8 +24,12 @@ namespace XamProjectTest.service
 
 
         //End point to get all projects
-        [Post("/api-token-auth/")]
+        [Post("/projects/")]
         Task<string> getProjects();
+
+        //End point to insert or create a new project
+        [Post("/projects/")]
+        Task<Project> createProject([Header("Authorization")] string authorization, [Body] Project project);
 
 
 
