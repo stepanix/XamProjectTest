@@ -18,13 +18,10 @@ namespace XamProjectTest.service
     {
         private static RestServiceInterface REST_CLIENT;
         private static string REST_SERVICE_URL = "http://projectservice.staging.tangentmicroservices.com:80/api/v1/projects/";
-        private static string REST_SERVICE_LOGIN_URL = "http://userservice.staging.tangentmicroservices.com:80/";
+        //private static string REST_SERVICE_LOGIN_URL = "http://userservice.staging.tangentmicroservices.com:80/";
 
         //Static constructor. This is necessary because of the need to create this class only once.
-        //static SetupRestClient()
-        //{
-           
-        //}
+        
 
         public static RestServiceInterface getRestClient()
         {
@@ -36,6 +33,8 @@ namespace XamProjectTest.service
             REST_CLIENT = restClient;
         }
 
-
     }
+
+
+
 }

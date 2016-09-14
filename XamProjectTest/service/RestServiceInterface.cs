@@ -20,7 +20,7 @@ namespace XamProjectTest.service
     {
         //End point to login by posting x-www-form-urlencoded parameters and return auth token as a string
         [Post("/api-token-auth/")]
-        Task<string> postLogin([Body(BodySerializationMethod.UrlEncoded)] Dictionary<string, object> loginDetails);
+        Task<UserToken> postLogin([Body(BodySerializationMethod.UrlEncoded)] Dictionary<string, object> loginDetails);
 
 
         //End point to get all projects

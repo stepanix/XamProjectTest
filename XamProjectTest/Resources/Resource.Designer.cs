@@ -2748,6 +2748,9 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f070021
 			public const int character_counter_pattern = 2131165217;
 			
+			// aapt resource value: 0x7f070027
+			public const int error_message = 2131165223;
+			
 			// aapt resource value: 0x7f070000
 			public const int mr_media_route_button_content_description = 2131165184;
 			

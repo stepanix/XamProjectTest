@@ -143,10 +143,12 @@
     <Compile Include="model\Resource.cs" />
     <Compile Include="model\Task.cs" />
     <Compile Include="model\TaskProject.cs" />
+    <Compile Include="model\UserToken.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="service\RestClient.cs" />
     <Compile Include="service\RestServiceInterface.cs" />
+    <Compile Include="utils\SharedPreferencesHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
