@@ -52,8 +52,7 @@ namespace XamProjectTest
             };
             try
             {
-                var restInterface = RestService.For<RestServiceInterface>("http://userservice.staging.tangentmicroservices.com:80/");
-                UserToken userToken = await restInterface.postLogin(loginDetails);
+                UserToken userToken = await RestClient.getRestClientLogin().postLogin(loginDetails);
                 if (progressDialog.IsShowing)
                     progressDialog.Dismiss();
 
@@ -67,7 +66,7 @@ namespace XamProjectTest
                 if (progressDialog.IsShowing)
                     progressDialog.Cancel();
                 Android.Content.Res.Resources res = this.Resources;
-                Toast.MakeText(this, res.GetString(Resource.String.error_message), ToastLength.Long).Show();
+                Toast.MakeText(this, res.GetString(Resource.String.error_message) + " "+  ex.ToString(), ToastLength.Long).Show();
             }
 
         }
