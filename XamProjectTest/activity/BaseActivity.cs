@@ -22,15 +22,6 @@ namespace XamProjectTest.activity
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Base);
-            //Load Initial Fragment
-            FragmentTransaction fragmentTx = this.FragmentManager.BeginTransaction();
-            ListProjectFragment fragment = new ListProjectFragment();
-
-            //The fragment will have the ID of Resource.Id.fragment_container.
-           fragmentTx.Add(Resource.Id.fragment_container, fragment);
-
-            //Commit the transaction.
-           fragmentTx.Commit();
 
             //Check if user logged in successfully previously by checking if token is present
             if (SharedPreferencesHelper.retrieveUserToken(this).Trim().Length<2)
@@ -47,6 +38,13 @@ namespace XamProjectTest.activity
             // Attach item selected handler to navigation view
             var navigationView = FindViewById<NavigationView>(Resource.Id.nav_view);
             navigationView.NavigationItemSelected += NavigationView_NavigationItemSelected;
+
+            //Load Initial Fragment
+            Fragment fragment = new ListProjectFragment();
+
+            FragmentManager fragmentManager = this.FragmentManager;
+
+            fragmentManager.BeginTransaction().Replace(Resource.Id.fragment_container, fragment).Commit();
 
             // Create ActionBarDrawerToggle button and add it to the toolbar
             var drawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, Resource.String.open_drawer, Resource.String.close_drawer);
@@ -65,14 +63,12 @@ namespace XamProjectTest.activity
                     // React on 'Messages' selection
                     break;
                 case (Resource.Id.nav_addproject):
-                    //FragmentTransaction fragmentTx = this.FragmentManager.BeginTransaction();
-                    //AddProjectFragment fragment = new AddProjectFragment();
+                    //Load Fragment to Add or Create a New Project
+                    Fragment fragment = new AddProjectFragment();
 
-                    // The fragment will have the ID of Resource.Id.fragment_container.
-                    //fragmentTx.Add(Resource.Id.fragment_container, aDifferentDetailsFrag);
+                    FragmentManager fragmentManager = this.FragmentManager;
 
-                    // Commit the transaction.
-                    //fragmentTx.Commit();
+                    fragmentManager.BeginTransaction().Replace(Resource.Id.fragment_container, fragment).Commit();
                     break;
             }
 
