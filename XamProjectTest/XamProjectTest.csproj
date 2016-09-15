@@ -142,6 +142,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="activity\BaseActivity.cs" />
+    <Compile Include="fragment\AddProjectFragment.cs" />
     <Compile Include="fragment\ListProjectFragment.cs" />
     <Compile Include="LoginActivity.cs" />
     <Compile Include="MainActivity.cs" />
@@ -172,6 +173,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\List_Project_Fragment.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Add_Project_Fragment.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

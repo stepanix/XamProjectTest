@@ -9,6 +9,7 @@ using Android.Support.Design.Widget;
 using XamProjectTest.utils;
 using Android.Views;
 using Android.Content;
+using XamProjectTest.fragment;
 
 namespace XamProjectTest.activity
 {
@@ -21,6 +22,16 @@ namespace XamProjectTest.activity
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Base);
+            //Load Initial Fragment
+            FragmentTransaction fragmentTx = this.FragmentManager.BeginTransaction();
+            ListProjectFragment fragment = new ListProjectFragment();
+
+            //The fragment will have the ID of Resource.Id.fragment_container.
+           fragmentTx.Add(Resource.Id.fragment_container, fragment);
+
+            //Commit the transaction.
+           fragmentTx.Commit();
+
             //Check if user logged in successfully previously by checking if token is present
             if (SharedPreferencesHelper.retrieveUserToken(this).Trim().Length<2)
             {
@@ -54,7 +65,14 @@ namespace XamProjectTest.activity
                     // React on 'Messages' selection
                     break;
                 case (Resource.Id.nav_addproject):
-                    // React on 'Friends' selection
+                    //FragmentTransaction fragmentTx = this.FragmentManager.BeginTransaction();
+                    //AddProjectFragment fragment = new AddProjectFragment();
+
+                    // The fragment will have the ID of Resource.Id.fragment_container.
+                    //fragmentTx.Add(Resource.Id.fragment_container, aDifferentDetailsFrag);
+
+                    // Commit the transaction.
+                    //fragmentTx.Commit();
                     break;
             }
 
