@@ -25,7 +25,7 @@ namespace XamProjectTest.activity
             SetContentView(Resource.Layout.Base);
 
             //Check if user logged in successfully previously by checking if token is present
-            if (SharedPreferencesHelper.retrieveUserToken(this).Trim().Length<2)
+            if (SharedPreferencesHelper.retrieveUserToken().Trim().Length<2)
             {
                 logOut();
             }
@@ -99,9 +99,9 @@ namespace XamProjectTest.activity
         private void logOut()
         {
             //Clear stored user token
-            SharedPreferencesHelper.clearUserToken(this);
+            SharedPreferencesHelper.clearUserToken();
             //Return to Login Screen
-            var IntentLogin = new Intent(this, typeof(LoginActivity));
+            var IntentLogin = new Intent(Android.App.Application.Context, typeof(LoginActivity));
             IntentLogin.AddFlags(ActivityFlags.ClearTop);
             IntentLogin.AddFlags(ActivityFlags.ClearTask);
             IntentLogin.AddFlags(ActivityFlags.NewTask);

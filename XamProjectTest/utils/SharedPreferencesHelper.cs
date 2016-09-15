@@ -15,24 +15,24 @@ namespace XamProjectTest.utils
 {
     public class SharedPreferencesHelper
     {
-        public static void storeUserToken(Context context, model.UserToken userToken)
+        public static void storeUserToken(model.UserToken userToken)
         {
-            ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(context);
+            ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(Android.App.Application.Context);
             ISharedPreferencesEditor editor = prefs.Edit();
             editor.PutString("token", userToken.Token);
             editor.Apply();
         }
 
-        public static string retrieveUserToken(Context context)
+        public static string retrieveUserToken()
         {
-            ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(context);
+            ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(Android.App.Application.Context);
             string userToken = prefs.GetString("token", "");
             return userToken;
         }
 
-        public static void clearUserToken(Context context)
+        public static void clearUserToken()
         {
-            ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(context);
+            ISharedPreferences prefs = PreferenceManager.GetDefaultSharedPreferences(Android.App.Application.Context);
             ISharedPreferencesEditor editor = prefs.Edit();
             editor.PutString("token", "");
             editor.Apply();

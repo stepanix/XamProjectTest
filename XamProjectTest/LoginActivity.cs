@@ -1,19 +1,17 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 using Android.App;
-using Android.Content;
+
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
+
 using Android.Widget;
-using Refit;
+
 using XamProjectTest.service;
 using XamProjectTest.model;
 using XamProjectTest.utils;
 using XamProjectTest.activity;
+
 
 namespace XamProjectTest
 {
@@ -58,7 +56,7 @@ namespace XamProjectTest
                     progressDialog.Dismiss();
 
                 //Store Bearer Token then proceed to next screen
-                SharedPreferencesHelper.storeUserToken(this, userToken);
+                SharedPreferencesHelper.storeUserToken(userToken);
                 StartActivity(typeof(BaseActivity));
                 this.Finish();
             }
