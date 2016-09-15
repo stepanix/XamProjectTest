@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:background="#FFFFFF"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtProjectName"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="5dp"
+            android:text="****"
+            android:textColor="@color/colorBlack"
+            android:layout_height="wrap_content"
+            android:layout_width="140dp"
+            android:layout_marginRight="2dp" />
+        <Button
+            android:layout_weight="1"
+            android:background="@color/colorNavBarHeader"
+            android:id="@+id/btnViewDetails"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/fa_search"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:textSize="12sp"
+            android:layout_toRightOf="@+id/txtProjectName"
+            android:textColor="@color/colorWhite" />
+        <Button
+            android:layout_weight="1"
+            android:background="@color/colorNavBarHeader"
+            android:id="@+id/btnEditProject"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/fa_edit"
+            android:layout_below="@+id/txtClub"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:textSize="12sp"
+            android:layout_toRightOf="@+id/btnViewDetails"
+            android:textColor="@color/colorWhite" />
+        <Button
+            android:layout_weight="1"
+            android:background="@color/colorNavBarHeader"
+            android:id="@+id/btnDeleteProject"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/fa_delete"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:textSize="12sp"
+            android:layout_toRightOf="@+id/btnEditProject"
+            android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+</LinearLayout>

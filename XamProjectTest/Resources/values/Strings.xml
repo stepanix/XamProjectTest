@@ -16,5 +16,11 @@
 
   <string name="open_drawer">Open drawer</string>
   <string name="close_drawer">Close drawer</string>
+
+  <string name="fa_edit">&#xf044;</string>
+  <string name="fa_search">&#xf002;</string>
+  <string name="fa_delete">&#xf00d;</string>
+  
+  
   
 </resources>

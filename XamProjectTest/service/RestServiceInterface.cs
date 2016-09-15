@@ -23,8 +23,8 @@ namespace XamProjectTest.service
         Task<UserToken> postLogin([Body(BodySerializationMethod.UrlEncoded)] Dictionary<string, object> loginDetails);
 
         //End point to get all projects
-        [Post("/projects/")]
-        Task<string> getProjects();
+        [Get("/projects/")]
+        Task<List<Project>> getProjects([Header("Authorization")] string authorization);
 
         //End point to insert or create a new project
         [Post("/projects/")]

@@ -12,10 +12,10 @@ namespace XamProjectTest.model
         public string User { get; set; }
 
         [JsonProperty("start_date")]
-        public DateTime StartDate { get; set; }
+        public Nullable<System.DateTime> StartDate { get; set; }
 
         [JsonProperty("end_date")]
-        public DateTime EndDate { get; set; }
+        public Nullable<System.DateTime> EndDate { get; set; }
 
         [JsonProperty("rate")]
         public float Rate { get; set; }

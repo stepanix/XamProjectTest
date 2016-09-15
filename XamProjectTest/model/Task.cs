@@ -23,7 +23,7 @@ namespace XamProjectTest.model
         public string Title { get; set; }
 
         [JsonProperty("due_date")]
-        public DateTime DueDate { get; set; }
+        public Nullable<System.DateTime> DueDate{ get; set; }
 
         [JsonProperty("estimated_hours")]
         public decimal EstimatedHours { get; set; }

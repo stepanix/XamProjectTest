@@ -18,7 +18,7 @@ namespace XamProjectTest.service
     public class RestClient
     {
         private static RestServiceInterface REST_CLIENT, REST_CLIENT_LOGIN;
-        private static string REST_CLIENT_URL = "http://projectservice.staging.tangentmicroservices.com:80/api/v1/projects/";
+        private static string REST_CLIENT_URL = "http://projectservice.staging.tangentmicroservices.com:80/api/v1/";
         private static string REST_CLIENT_LOGIN_URL = "http://userservice.staging.tangentmicroservices.com:80/";
 
         

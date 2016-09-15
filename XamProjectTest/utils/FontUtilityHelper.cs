@@ -4,19 +4,13 @@ using Android.Graphics;
 
 namespace XamProjectTest.utils
 {
-    public class FontUtilityHelper
+    public static class FontUtilityHelper
     {
         private static Typeface font;
-        static FontUtilityHelper()
-        {
-            // Initialize font.
-            font = Typeface.CreateFromAsset(Android.App.Application.Context.Assets, "fontawesome-webfont.ttf");
-        }
-
-        private FontUtilityHelper() { }
 
         public static Typeface getFont()
         {
+            font = Typeface.CreateFromAsset(Android.App.Application.Context.Assets, "fonts/fontawesome-webfont.ttf");
             return font;
         }
 

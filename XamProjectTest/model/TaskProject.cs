@@ -26,10 +26,10 @@ namespace XamProjectTest.model
         public string Description { get; set; }
 
         [JsonProperty("start_date")]
-        public DateTime StartDate { get; set; }
+        public Nullable<System.DateTime> StartDate { get; set; }
 
         [JsonProperty("end_date")]
-        public DateTime EndDate { get; set; }
+        public Nullable<System.DateTime> EndDate { get; set; }
 
         [JsonProperty("is_billable")]
         public bool IsBillable { get; set; }

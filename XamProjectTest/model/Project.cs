@@ -16,6 +16,9 @@ namespace XamProjectTest.model
     public class Project
     {
 
+        
+
+
         [JsonProperty("pk")]
         public int Pk { get; set; }
 
@@ -26,10 +29,10 @@ namespace XamProjectTest.model
         public string Description { get; set; }
 
         [JsonProperty("start_date")]
-        public DateTime StartDate { get; set; }
+        public Nullable<System.DateTime> StartDate { get; set; }
 
         [JsonProperty("end_date")]
-        public DateTime EndDate { get; set; }
+        public Nullable<System.DateTime> EndDate { get; set; }
 
         [JsonProperty("is_billable")]
         public bool IsBillable { get; set; }
@@ -38,9 +41,24 @@ namespace XamProjectTest.model
         public bool IsActive { get; set; }
 
         [JsonProperty("task_set")]
-        public Task[] ProjectData { get; set; }
+        public List<Task> ProjectData { get; set; }
 
         [JsonProperty("resource_set ")]
-        public Resource[] ResourceSet { get; set; }
+        public List<Resource> ResourceSet { get; set; }
+
+        public Project(int Pk, string Title, string Description,
+            Nullable<System.DateTime> StartDate, Nullable<System.DateTime> EndDate, bool IsBillable,
+            bool IsActive, List<Task> ProjectData, List<Resource>ResourceSet)
+        {
+            this.Pk = Pk;
+            this.Title = Title;
+            this.Description = Description;
+            this.StartDate = StartDate;
+            this.EndDate = EndDate;
+            this.IsBillable = IsBillable;
+            this.IsActive = IsActive;
+            this.ProjectData = ProjectData;
+            this.ResourceSet = ResourceSet;
+        }
     }
 }
