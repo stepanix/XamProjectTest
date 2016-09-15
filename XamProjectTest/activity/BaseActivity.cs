@@ -17,6 +17,7 @@ namespace XamProjectTest.activity
     public class BaseActivity : AppCompatActivity
     {
         DrawerLayout drawerLayout;
+        FragmentManager fragmentManager = null;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -39,11 +40,10 @@ namespace XamProjectTest.activity
             var navigationView = FindViewById<NavigationView>(Resource.Id.nav_view);
             navigationView.NavigationItemSelected += NavigationView_NavigationItemSelected;
 
+            fragmentManager = this.FragmentManager;
+
             //Load Initial Fragment
             Fragment fragment = new ListProjectFragment();
-
-            FragmentManager fragmentManager = this.FragmentManager;
-
             fragmentManager.BeginTransaction().Replace(Resource.Id.fragment_container, fragment).Commit();
 
             // Create ActionBarDrawerToggle button and add it to the toolbar
@@ -57,18 +57,17 @@ namespace XamProjectTest.activity
             switch (e.MenuItem.ItemId)
             {
                 case (Resource.Id.nav_rateapp):
-                    // React on 'Home' selection
+                    //Call url to app in Google Play Store
                     break;
                 case (Resource.Id.nav_listprojects):
-                    // React on 'Messages' selection
+                    //Load Fragment to list all Project
+                    Fragment frgList = new ListProjectFragment();
+                    fragmentManager.BeginTransaction().Replace(Resource.Id.fragment_container, frgList).Commit();
                     break;
                 case (Resource.Id.nav_addproject):
                     //Load Fragment to Add or Create a New Project
-                    Fragment fragment = new AddProjectFragment();
-
-                    FragmentManager fragmentManager = this.FragmentManager;
-
-                    fragmentManager.BeginTransaction().Replace(Resource.Id.fragment_container, fragment).Commit();
+                    Fragment frgAdd = new AddProjectFragment();
+                    fragmentManager.BeginTransaction().Replace(Resource.Id.fragment_container, frgAdd).Commit();
                     break;
             }
 
