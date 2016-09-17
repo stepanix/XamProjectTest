@@ -1,18 +1,11 @@
-
-
 using Android.App;
-
 using Android.OS;
-
 using Android.Views;
-using Android.Widget;
 using Android.Support.V7.Widget;
 using XamProjectTest.adapter.data;
 using XamProjectTest.model;
 using System.Collections.Generic;
-using XamProjectTest.service;
-using XamProjectTest.utils;
-
+using XamProjectTest.controller;
 
 namespace XamProjectTest.fragment
 {
@@ -24,6 +17,7 @@ namespace XamProjectTest.fragment
         List<Project> lstProject;
         
         Handler handler;
+        ProgressDialog progressDialog;
 
 
         public override void OnCreate(Bundle savedInstanceState)
@@ -36,6 +30,8 @@ namespace XamProjectTest.fragment
             View rootView = inflater.Inflate(Resource.Layout.List_Project_Fragment, container, false);
             recyclerView = rootView.FindViewById<RecyclerView>(Resource.Id.recyclerView);
 
+            
+
             lstProject = new List<Project>();
             handler = new Handler();
 
@@ -46,6 +42,11 @@ namespace XamProjectTest.fragment
             adapter = new ProjectDataAdapter(lstProject);
             recyclerView.SetAdapter(adapter);
 
+            progressDialog = new ProgressDialog(Activity);
+            progressDialog.SetCancelable(false);
+            progressDialog.SetMessage("Loading projects, Please Wait...");
+            progressDialog.Show();
+
             //Populate Projects Method
             ListProjects();
             return rootView;
@@ -53,8 +54,10 @@ namespace XamProjectTest.fragment
 
         private async void ListProjects()
         {
-            var arrProjects =  await RestClient.getRestClient().getProjects(SharedPreferencesHelper.retrieveUserToken());
-                        
+            //Call project controller to retrieve projects
+            ProjectController projectController = new ProjectController();
+            var arrProjects = await projectController.GetProjects();
+
             foreach (Project project in arrProjects)
             {
                 lstProject.Add(
@@ -62,7 +65,7 @@ namespace XamProjectTest.fragment
                             project.Title, project.Description,
                             project.StartDate, project.EndDate,
                             project.IsBillable, project.IsActive,
-                            project.ProjectData, project.ResourceSet
+                            project.TaskSet, project.ResourceSet
                     ));
             }
             handler.Post(new Java.Lang.Runnable(() =>
@@ -70,6 +73,8 @@ namespace XamProjectTest.fragment
                 adapter.NotifyItemInserted(lstProject.Count);
             }));
             adapter.NotifyDataSetChanged();
+            if (progressDialog.IsShowing)
+                progressDialog.Dismiss();
         }
 
     }

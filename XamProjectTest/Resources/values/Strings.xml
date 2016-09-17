@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+     
     <string name="Hello">Hello World, Click Me!</string>
     <string name="ApplicationName">Xam Project Test</string>
+  
+    <!--Login Screen-->
     <string name="prompt_username">Username</string>
     <string name="prompt_password">Password</string>
     <string name="btn_login">Login</string>
@@ -10,6 +13,14 @@
     <string name="mnu_logout">Log Out</string>
     <string name="mnu_about">About</string>
 
+     <!--Add/Edit Project Fragment-->
+    <string name="msg_project_saved">Record saved successfully</string>
+    <string name="msg_project_saved_error">Sorry, an error occurred. Please try again</string>
+    <string name="msg_project_title_error">Please enter a valid project title</string>
+    <string name="msg_project_desc_error">Please enter a valid project description</string>
+    <string name="msg_project_startdate_error">Please select a valid project start date</string>
+
+     <!--Menu Drawer Item List-->
     <string name="mnu_rateapp">Rate App</string>
     <string name="mnu_listprojects">List Projects</string>
     <string name="mnu_addproject">Create Project</string>
@@ -17,6 +28,7 @@
   <string name="open_drawer">Open drawer</string>
   <string name="close_drawer">Close drawer</string>
 
+  <!--Font awesome icons-->
   <string name="fa_edit">&#xf044;</string>
   <string name="fa_search">&#xf002;</string>
   <string name="fa_delete">&#xf00d;</string>

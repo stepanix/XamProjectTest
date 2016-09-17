@@ -1,24 +1,13 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
-using Android.App;
-using Android.Content;
+using Newtonsoft.Json;
 using Android.OS;
 using Android.Runtime;
-using Android.Views;
-using Android.Widget;
-using Newtonsoft.Json;
+using System;
 
 namespace XamProjectTest.model
 {
     public class Project
     {
-
-        
-
-
         [JsonProperty("pk")]
         public int Pk { get; set; }
 
@@ -29,10 +18,10 @@ namespace XamProjectTest.model
         public string Description { get; set; }
 
         [JsonProperty("start_date")]
-        public Nullable<System.DateTime> StartDate { get; set; }
+        public string StartDate { get; set; }
 
         [JsonProperty("end_date")]
-        public Nullable<System.DateTime> EndDate { get; set; }
+        public string EndDate { get; set; }
 
         [JsonProperty("is_billable")]
         public bool IsBillable { get; set; }
@@ -41,14 +30,14 @@ namespace XamProjectTest.model
         public bool IsActive { get; set; }
 
         [JsonProperty("task_set")]
-        public List<Task> ProjectData { get; set; }
+        public Task[] TaskSet { get; set; }
 
         [JsonProperty("resource_set ")]
-        public List<Resource> ResourceSet { get; set; }
+        public Resource[] ResourceSet { get; set; }
 
         public Project(int Pk, string Title, string Description,
-            Nullable<System.DateTime> StartDate, Nullable<System.DateTime> EndDate, bool IsBillable,
-            bool IsActive, List<Task> ProjectData, List<Resource>ResourceSet)
+            string StartDate, string EndDate, bool IsBillable,
+            bool IsActive, Task[] TaskSet, Resource[] ResourceSet)
         {
             this.Pk = Pk;
             this.Title = Title;
@@ -57,8 +46,9 @@ namespace XamProjectTest.model
             this.EndDate = EndDate;
             this.IsBillable = IsBillable;
             this.IsActive = IsActive;
-            this.ProjectData = ProjectData;
+            this.TaskSet = TaskSet;
             this.ResourceSet = ResourceSet;
         }
+
     }
 }

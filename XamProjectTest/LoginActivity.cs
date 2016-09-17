@@ -11,7 +11,7 @@ using XamProjectTest.service;
 using XamProjectTest.model;
 using XamProjectTest.utils;
 using XamProjectTest.activity;
-
+using XamProjectTest.controller;
 
 namespace XamProjectTest
 {
@@ -35,7 +35,6 @@ namespace XamProjectTest
                 Login(edtUserName.Text.ToString(), edtPassword.Text.ToString());
             };
         }
-
         
         private async void Login(string username,string password)
         {
@@ -44,14 +43,18 @@ namespace XamProjectTest
             progressDialog.SetMessage("Verifying login details, Please Wait...");
             progressDialog.Show();
 
+            Android.Content.Res.Resources res = this.Resources;
+
             var loginDetails = new Dictionary<string, object>
             {
                 {"username", username},
                 {"password", password},
             };
+
             try
             {
-                UserToken userToken = await RestClient.getRestClientLogin().postLogin(loginDetails);
+                LoginController login = new LoginController();
+                UserToken userToken = await login.PostLogin(loginDetails);
                 if (progressDialog.IsShowing)
                     progressDialog.Dismiss();
 
@@ -65,7 +68,7 @@ namespace XamProjectTest
                 //Bad request indicates that wrong login details were provided
                 if (progressDialog.IsShowing)
                     progressDialog.Cancel();
-                Android.Content.Res.Resources res = this.Resources;
+                
                 Toast.MakeText(this, res.GetString(Resource.String.error_message), ToastLength.Long).Show();
             }
 

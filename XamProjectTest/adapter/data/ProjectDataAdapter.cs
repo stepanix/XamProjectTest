@@ -10,6 +10,8 @@ using Android.App;
 using Android.Support.V7.Widget;
 using XamProjectTest.utils;
 using Android.Graphics;
+using Android.OS;
+using XamProjectTest.fragment;
 
 namespace XamProjectTest.adapter.data
 {
@@ -17,10 +19,10 @@ namespace XamProjectTest.adapter.data
     {
         
         private List<Project> lstProject;
-
         
-        private int VIEW_ITEM = 1;
-        private int VIEW_PROG = 0;
+        
+        //private int VIEW_ITEM = 1;
+        //private int VIEW_PROG = 0;
 
         public ProjectDataAdapter(List<Project> lstProject)
         {
@@ -53,14 +55,18 @@ namespace XamProjectTest.adapter.data
 
         public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
         {
-            var itemHolder = (ViewProjectHolder)holder;
-            itemHolder.TxtProjectName.Text = lstProject[position].Title.ToUpper();
+            //Person singlePerson = (Person)lstPerson.get(position);
+
+            Project singleProject = lstProject[position];
+            ((ViewProjectHolder)holder).TxtProjectName.Text = singleProject.Title.ToUpper();
+            ((ViewProjectHolder)holder).ProjectData = singleProject;
         }
 
         public class ViewProjectHolder : RecyclerView.ViewHolder
         {
             Button btnViewDetails, btnEditProject, btnDeleteProject;
             TextView txtProjectName;
+            Project project;
 
             public ViewProjectHolder(View v) : base(v)
             {
@@ -72,6 +78,19 @@ namespace XamProjectTest.adapter.data
                 btnViewDetails.SetTypeface(FontUtilityHelper.getFont(), TypefaceStyle.Normal);
                 btnEditProject.SetTypeface(FontUtilityHelper.getFont(), TypefaceStyle.Normal);
                 btnDeleteProject.SetTypeface(FontUtilityHelper.getFont(), TypefaceStyle.Normal);
+
+                btnViewDetails.Click += delegate
+                {
+                    Bundle arguments = new Bundle();
+                    arguments.PutInt("PK", project.Pk);
+                    Fragment fragment = new ViewProjectFragment();
+                    fragment.Arguments = arguments;
+                   
+                    ((Activity)v.Context).FragmentManager.BeginTransaction()
+                               .Replace(Resource.Id.fragment_container, fragment)
+                               .Commit();
+                   
+                };
             }
 
             public TextView TxtProjectName
@@ -79,7 +98,19 @@ namespace XamProjectTest.adapter.data
                 get { return txtProjectName; }
             }
 
-           
+            public Project ProjectData
+            {
+                get
+                {
+                    return project;
+                }
+                set
+                {
+                    project = value;
+                }
+            }
+
+
 
         }
 

@@ -26,6 +26,10 @@ namespace XamProjectTest.service
         [Get("/projects/")]
         Task<List<Project>> getProjects([Header("Authorization")] string authorization);
 
+        //End point to get one project
+        [Get("/projects/{pk}/")]
+        Task<Project> getProject([Header("Authorization")] string authorization, int pk);
+
         //End point to insert or create a new project
         [Post("/projects/")]
         Task<Project> createProject([Header("Authorization")] string authorization, [Body] Project project);

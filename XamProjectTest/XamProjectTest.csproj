@@ -143,7 +143,10 @@
   <ItemGroup>
     <Compile Include="activity\BaseActivity.cs" />
     <Compile Include="adapter\data\ProjectDataAdapter.cs" />
+    <Compile Include="controller\LoginController.cs" />
+    <Compile Include="controller\ProjectController.cs" />
     <Compile Include="fragment\AddProjectFragment.cs" />
+    <Compile Include="fragment\DatePickerFragment.cs" />
     <Compile Include="fragment\ListProjectFragment.cs" />
     <Compile Include="fragment\ViewProjectFragment.cs" />
     <Compile Include="LoginActivity.cs" />
@@ -158,6 +161,7 @@
     <Compile Include="service\RestClient.cs" />
     <Compile Include="service\RestServiceInterface.cs" />
     <Compile Include="utils\FontUtilityHelper.cs" />
+    <Compile Include="utils\FormValidationHelper.cs" />
     <Compile Include="utils\SharedPreferencesHelper.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -183,7 +187,7 @@
     <AndroidResource Include="Resources\layout\List_Project_Fragment.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\Add_Project_Fragment.axml">
+    <AndroidResource Include="Resources\layout\Manage_Project_Fragment.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\View_Project_Fragment.axml">
