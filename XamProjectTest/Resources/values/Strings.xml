@@ -19,6 +19,8 @@
     <string name="msg_project_title_error">Please enter a valid project title</string>
     <string name="msg_project_desc_error">Please enter a valid project description</string>
     <string name="msg_project_startdate_error">Please select a valid project start date</string>
+    <string name="msg_project_deleted">Project deleted successfully</string>
+    <string name="msg_project_delete_error">Sorry an error occurred while deleting. Please try again</string>
 
      <!--Menu Drawer Item List-->
     <string name="mnu_rateapp">Rate App</string>

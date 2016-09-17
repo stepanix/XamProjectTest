@@ -1,47 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
- 
-   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <EditText
-        android:enabled="false"
+  
+    <EditText        
         android:id="@+id/edtProjectTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        />
-     <EditText
-        android:enabled="false"
+        android:layout_gravity="center_horizontal" />
+  
+    <EditText        
         android:id="@+id/edtProjectDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-         />
+        android:layout_gravity="center_horizontal" />
+  
     <EditText
-        android:enabled="false"
         android:id="@+id/edtStartDate"
         android:hint="Select start date"
         android:focusable="false"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-     <EditText
-        android:enabled="false"
+    
+    <EditText
         android:id="@+id/edtEndDate"
         android:hint="Select end date"
         android:focusable="false"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-    <CheckBox
-        android:enabled="false"
+  
+    <CheckBox        
         android:text="Is Billable"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/chkIsBillable" />
-     <CheckBox
-        android:enabled="false"
+  
+    <CheckBox
         android:text="Is Active"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/chkIsActive" />
+    <Button
+        android:text="Update Project"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnUpdate" />
 </LinearLayout>

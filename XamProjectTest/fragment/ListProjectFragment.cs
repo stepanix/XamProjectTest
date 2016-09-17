@@ -30,8 +30,6 @@ namespace XamProjectTest.fragment
             View rootView = inflater.Inflate(Resource.Layout.List_Project_Fragment, container, false);
             recyclerView = rootView.FindViewById<RecyclerView>(Resource.Id.recyclerView);
 
-            
-
             lstProject = new List<Project>();
             handler = new Handler();
 

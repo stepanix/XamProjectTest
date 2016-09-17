@@ -22,6 +22,12 @@ namespace XamProjectTest.controller
         {
         }
 
+        //Update existing project
+        public Task<Project> UpdateProject(int pk,Project project)
+        {
+            return RestClient.getRestClient().updateProject(SharedPreferencesHelper.retrieveUserToken(),pk, project);
+        }
+
         //Create new project
         public Task<Project> SaveProject(Project project)
         {
@@ -38,6 +44,12 @@ namespace XamProjectTest.controller
         public async Task<Project> GetProject(int pk)
         {
             return await RestClient.getRestClient().getProject(SharedPreferencesHelper.retrieveUserToken(),pk);
+        }
+
+        //Delete selected Project
+        public async Task<string> DeleteProject(int pk)
+        {
+            return await RestClient.getRestClient().deleteProject(SharedPreferencesHelper.retrieveUserToken(), pk);
         }
 
     }

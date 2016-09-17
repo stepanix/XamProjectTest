@@ -2127,11 +2127,11 @@ namespace XamProjectTest
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060081
-			public const int MyButton = 2131099777;
+			// aapt resource value: 0x7f060080
+			public const int MyButton = 2131099776;
 			
-			// aapt resource value: 0x7f060097
-			public const int action0 = 2131099799;
+			// aapt resource value: 0x7f060096
+			public const int action0 = 2131099798;
 			
 			// aapt resource value: 0x7f06005a
 			public const int action_bar = 2131099738;
@@ -2157,8 +2157,8 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f06005b
 			public const int action_context_bar = 2131099739;
 			
-			// aapt resource value: 0x7f06009b
-			public const int action_divider = 2131099803;
+			// aapt resource value: 0x7f06009a
+			public const int action_divider = 2131099802;
 			
 			// aapt resource value: 0x7f060003
 			public const int action_menu_divider = 2131099651;
@@ -2184,8 +2184,8 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f06001e
 			public const int always = 2131099678;
 			
-			// aapt resource value: 0x7f06008f
-			public const int art = 2131099791;
+			// aapt resource value: 0x7f06008e
+			public const int art = 2131099790;
 			
 			// aapt resource value: 0x7f06001b
 			public const int beginning = 2131099675;
@@ -2193,29 +2193,29 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f06002a
 			public const int bottom = 2131099690;
 			
-			// aapt resource value: 0x7f060071
-			public const int btnDeleteProject = 2131099761;
-			
-			// aapt resource value: 0x7f06006f
-			public const int btnEditProject = 2131099759;
-			
-			// aapt resource value: 0x7f060080
-			public const int btnLogin = 2131099776;
-			
-			// aapt resource value: 0x7f060088
-			public const int btnSave = 2131099784;
+			// aapt resource value: 0x7f060070
+			public const int btnDeleteProject = 2131099760;
 			
 			// aapt resource value: 0x7f06006e
-			public const int btnViewDetails = 2131099758;
+			public const int btnEditProject = 2131099758;
+			
+			// aapt resource value: 0x7f06007f
+			public const int btnLogin = 2131099775;
+			
+			// aapt resource value: 0x7f060087
+			public const int btnSave = 2131099783;
+			
+			// aapt resource value: 0x7f0600a3
+			public const int btnUpdate = 2131099811;
 			
 			// aapt resource value: 0x7f060044
 			public const int buttonPanel = 2131099716;
 			
-			// aapt resource value: 0x7f060094
-			public const int buttons = 2131099796;
+			// aapt resource value: 0x7f060093
+			public const int buttons = 2131099795;
 			
-			// aapt resource value: 0x7f060098
-			public const int cancel_action = 2131099800;
+			// aapt resource value: 0x7f060097
+			public const int cancel_action = 2131099799;
 			
 			// aapt resource value: 0x7f06002b
 			public const int center = 2131099691;
@@ -2229,14 +2229,14 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f060052
 			public const int checkbox = 2131099730;
 			
-			// aapt resource value: 0x7f060087
-			public const int chkIsActive = 2131099783;
-			
 			// aapt resource value: 0x7f060086
-			public const int chkIsBillable = 2131099782;
+			public const int chkIsActive = 2131099782;
 			
-			// aapt resource value: 0x7f06009e
-			public const int chronometer = 2131099806;
+			// aapt resource value: 0x7f060085
+			public const int chkIsBillable = 2131099781;
+			
+			// aapt resource value: 0x7f06009d
+			public const int chronometer = 2131099805;
 			
 			// aapt resource value: 0x7f060033
 			public const int clip_horizontal = 2131099699;
@@ -2262,29 +2262,29 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f060040
 			public const int default_activity_button = 2131099712;
 			
-			// aapt resource value: 0x7f06008e
-			public const int default_control_frame = 2131099790;
+			// aapt resource value: 0x7f06008d
+			public const int default_control_frame = 2131099789;
 			
-			// aapt resource value: 0x7f060073
-			public const int design_bottom_sheet = 2131099763;
-			
-			// aapt resource value: 0x7f06007a
-			public const int design_menu_item_action_area = 2131099770;
+			// aapt resource value: 0x7f060072
+			public const int design_bottom_sheet = 2131099762;
 			
 			// aapt resource value: 0x7f060079
-			public const int design_menu_item_action_area_stub = 2131099769;
+			public const int design_menu_item_action_area = 2131099769;
 			
 			// aapt resource value: 0x7f060078
-			public const int design_menu_item_text = 2131099768;
+			public const int design_menu_item_action_area_stub = 2131099768;
 			
 			// aapt resource value: 0x7f060077
-			public const int design_navigation_view = 2131099767;
+			public const int design_menu_item_text = 2131099767;
+			
+			// aapt resource value: 0x7f060076
+			public const int design_navigation_view = 2131099766;
 			
 			// aapt resource value: 0x7f06000e
 			public const int disableHome = 2131099662;
 			
-			// aapt resource value: 0x7f060095
-			public const int disconnect = 2131099797;
+			// aapt resource value: 0x7f060094
+			public const int disconnect = 2131099796;
 			
 			// aapt resource value: 0x7f060069
 			public const int drawer_layout = 2131099753;
@@ -2292,29 +2292,29 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f06005c
 			public const int edit_query = 2131099740;
 			
-			// aapt resource value: 0x7f060085
-			public const int edtEndDate = 2131099781;
-			
-			// aapt resource value: 0x7f06007e
-			public const int edtPassword = 2131099774;
-			
-			// aapt resource value: 0x7f060083
-			public const int edtProjectDescription = 2131099779;
-			
-			// aapt resource value: 0x7f060082
-			public const int edtProjectTitle = 2131099778;
-			
 			// aapt resource value: 0x7f060084
-			public const int edtStartDate = 2131099780;
+			public const int edtEndDate = 2131099780;
 			
 			// aapt resource value: 0x7f06007d
-			public const int edtUserName = 2131099773;
+			public const int edtPassword = 2131099773;
+			
+			// aapt resource value: 0x7f060082
+			public const int edtProjectDescription = 2131099778;
+			
+			// aapt resource value: 0x7f060081
+			public const int edtProjectTitle = 2131099777;
+			
+			// aapt resource value: 0x7f060083
+			public const int edtStartDate = 2131099779;
+			
+			// aapt resource value: 0x7f06007c
+			public const int edtUserName = 2131099772;
 			
 			// aapt resource value: 0x7f06001c
 			public const int end = 2131099676;
 			
-			// aapt resource value: 0x7f0600a3
-			public const int end_padder = 2131099811;
+			// aapt resource value: 0x7f0600a2
+			public const int end_padder = 2131099810;
 			
 			// aapt resource value: 0x7f060023
 			public const int enterAlways = 2131099683;
@@ -2361,8 +2361,8 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f06003f
 			public const int image = 2131099711;
 			
-			// aapt resource value: 0x7f0600a2
-			public const int info = 2131099810;
+			// aapt resource value: 0x7f0600a1
+			public const int info = 2131099809;
 			
 			// aapt resource value: 0x7f060000
 			public const int item_touch_helper_previous_elevation = 2131099648;
@@ -2370,11 +2370,11 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f06002f
 			public const int left = 2131099695;
 			
-			// aapt resource value: 0x7f06009c
-			public const int line1 = 2131099804;
+			// aapt resource value: 0x7f06009b
+			public const int line1 = 2131099803;
 			
-			// aapt resource value: 0x7f0600a0
-			public const int line3 = 2131099808;
+			// aapt resource value: 0x7f06009f
+			public const int line3 = 2131099807;
 			
 			// aapt resource value: 0x7f06000b
 			public const int listMode = 2131099659;
@@ -2382,23 +2382,23 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f060041
 			public const int list_item = 2131099713;
 			
-			// aapt resource value: 0x7f06007f
-			public const int login = 2131099775;
+			// aapt resource value: 0x7f06007e
+			public const int login = 2131099774;
 			
-			// aapt resource value: 0x7f06009a
-			public const int media_actions = 2131099802;
+			// aapt resource value: 0x7f060099
+			public const int media_actions = 2131099801;
 			
-			// aapt resource value: 0x7f06008d
-			public const int media_route_control_frame = 2131099789;
+			// aapt resource value: 0x7f06008c
+			public const int media_route_control_frame = 2131099788;
 			
-			// aapt resource value: 0x7f060089
-			public const int media_route_list = 2131099785;
+			// aapt resource value: 0x7f060088
+			public const int media_route_list = 2131099784;
+			
+			// aapt resource value: 0x7f060091
+			public const int media_route_volume_layout = 2131099793;
 			
 			// aapt resource value: 0x7f060092
-			public const int media_route_volume_layout = 2131099794;
-			
-			// aapt resource value: 0x7f060093
-			public const int media_route_volume_slider = 2131099795;
+			public const int media_route_volume_slider = 2131099794;
 			
 			// aapt resource value: 0x7f06001d
 			public const int middle = 2131099677;
@@ -2427,8 +2427,8 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f06006c
 			public const int nav_view = 2131099756;
 			
-			// aapt resource value: 0x7f060076
-			public const int navigation_header_container = 2131099766;
+			// aapt resource value: 0x7f060075
+			public const int navigation_header_container = 2131099765;
 			
 			// aapt resource value: 0x7f060021
 			public const int never = 2131099681;
@@ -2448,11 +2448,11 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f060029
 			public const int pin = 2131099689;
 			
-			// aapt resource value: 0x7f060090
-			public const int play_pause = 2131099792;
+			// aapt resource value: 0x7f06008f
+			public const int play_pause = 2131099791;
 			
-			// aapt resource value: 0x7f06007b
-			public const int profile_image = 2131099771;
+			// aapt resource value: 0x7f06007a
+			public const int profile_image = 2131099770;
 			
 			// aapt resource value: 0x7f060006
 			public const int progress_circular = 2131099654;
@@ -2463,14 +2463,14 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f060054
 			public const int radio = 2131099732;
 			
-			// aapt resource value: 0x7f06007c
-			public const int recyclerView = 2131099772;
+			// aapt resource value: 0x7f06007b
+			public const int recyclerView = 2131099771;
 			
 			// aapt resource value: 0x7f060030
 			public const int right = 2131099696;
 			
-			// aapt resource value: 0x7f06008b
-			public const int route_name = 2131099787;
+			// aapt resource value: 0x7f06008a
+			public const int route_name = 2131099786;
 			
 			// aapt resource value: 0x7f060017
 			public const int screen = 2131099671;
@@ -2523,8 +2523,8 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f060068
 			public const int select_dialog_listview = 2131099752;
 			
-			// aapt resource value: 0x7f06008c
-			public const int settings = 2131099788;
+			// aapt resource value: 0x7f06008b
+			public const int settings = 2131099787;
 			
 			// aapt resource value: 0x7f060053
 			public const int shortcut = 2131099731;
@@ -2538,11 +2538,11 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f060013
 			public const int showTitle = 2131099667;
 			
-			// aapt resource value: 0x7f060075
-			public const int snackbar_action = 2131099765;
-			
 			// aapt resource value: 0x7f060074
-			public const int snackbar_text = 2131099764;
+			public const int snackbar_action = 2131099764;
+			
+			// aapt resource value: 0x7f060073
+			public const int snackbar_text = 2131099763;
 			
 			// aapt resource value: 0x7f060027
 			public const int snap = 2131099687;
@@ -2565,38 +2565,38 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f060031
 			public const int start = 2131099697;
 			
-			// aapt resource value: 0x7f060099
-			public const int status_bar_latest_event_content = 2131099801;
+			// aapt resource value: 0x7f060098
+			public const int status_bar_latest_event_content = 2131099800;
 			
-			// aapt resource value: 0x7f060096
-			public const int stop = 2131099798;
+			// aapt resource value: 0x7f060095
+			public const int stop = 2131099797;
 			
 			// aapt resource value: 0x7f060065
 			public const int submit_area = 2131099749;
 			
-			// aapt resource value: 0x7f060091
-			public const int subtitle = 2131099793;
+			// aapt resource value: 0x7f060090
+			public const int subtitle = 2131099792;
 			
 			// aapt resource value: 0x7f06000d
 			public const int tabMode = 2131099661;
 			
-			// aapt resource value: 0x7f0600a1
-			public const int text = 2131099809;
+			// aapt resource value: 0x7f0600a0
+			public const int text = 2131099808;
 			
-			// aapt resource value: 0x7f06009f
-			public const int text2 = 2131099807;
+			// aapt resource value: 0x7f06009e
+			public const int text2 = 2131099806;
 			
 			// aapt resource value: 0x7f06004d
 			public const int textSpacerNoButtons = 2131099725;
 			
-			// aapt resource value: 0x7f06009d
-			public const int time = 2131099805;
+			// aapt resource value: 0x7f06009c
+			public const int time = 2131099804;
 			
 			// aapt resource value: 0x7f060043
 			public const int title = 2131099715;
 			
-			// aapt resource value: 0x7f06008a
-			public const int title_bar = 2131099786;
+			// aapt resource value: 0x7f060089
+			public const int title_bar = 2131099785;
 			
 			// aapt resource value: 0x7f060048
 			public const int title_template = 2131099720;
@@ -2610,11 +2610,11 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f060047
 			public const int topPanel = 2131099719;
 			
-			// aapt resource value: 0x7f060072
-			public const int touch_outside = 2131099762;
+			// aapt resource value: 0x7f060071
+			public const int touch_outside = 2131099761;
 			
-			// aapt resource value: 0x7f060070
-			public const int txtClub = 2131099760;
+			// aapt resource value: 0x7f06006f
+			public const int txtClub = 2131099759;
 			
 			// aapt resource value: 0x7f06006d
 			public const int txtProjectName = 2131099757;
@@ -2968,35 +2968,35 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f070021
 			public const int character_counter_pattern = 2131165217;
 			
-			// aapt resource value: 0x7f070034
-			public const int close_drawer = 2131165236;
+			// aapt resource value: 0x7f070036
+			public const int close_drawer = 2131165238;
 			
 			// aapt resource value: 0x7f070027
 			public const int error_message = 2131165223;
 			
+			// aapt resource value: 0x7f070039
+			public const int fa_delete = 2131165241;
+			
 			// aapt resource value: 0x7f070037
-			public const int fa_delete = 2131165239;
+			public const int fa_edit = 2131165239;
 			
-			// aapt resource value: 0x7f070035
-			public const int fa_edit = 2131165237;
-			
-			// aapt resource value: 0x7f070036
-			public const int fa_search = 2131165238;
+			// aapt resource value: 0x7f070038
+			public const int fa_search = 2131165240;
 			
 			// aapt resource value: 0x7f07002a
 			public const int mnu_about = 2131165226;
 			
-			// aapt resource value: 0x7f070032
-			public const int mnu_addproject = 2131165234;
+			// aapt resource value: 0x7f070034
+			public const int mnu_addproject = 2131165236;
 			
-			// aapt resource value: 0x7f070031
-			public const int mnu_listprojects = 2131165233;
+			// aapt resource value: 0x7f070033
+			public const int mnu_listprojects = 2131165235;
 			
 			// aapt resource value: 0x7f070029
 			public const int mnu_logout = 2131165225;
 			
-			// aapt resource value: 0x7f070030
-			public const int mnu_rateapp = 2131165232;
+			// aapt resource value: 0x7f070032
+			public const int mnu_rateapp = 2131165234;
 			
 			// aapt resource value: 0x7f070028
 			public const int mnu_settings = 2131165224;
@@ -3034,6 +3034,12 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f07000a
 			public const int mr_user_route_category_name = 2131165194;
 			
+			// aapt resource value: 0x7f070031
+			public const int msg_project_delete_error = 2131165233;
+			
+			// aapt resource value: 0x7f070030
+			public const int msg_project_deleted = 2131165232;
+			
 			// aapt resource value: 0x7f07002e
 			public const int msg_project_desc_error = 2131165230;
 			
@@ -3049,8 +3055,8 @@ namespace XamProjectTest
 			// aapt resource value: 0x7f07002d
 			public const int msg_project_title_error = 2131165229;
 			
-			// aapt resource value: 0x7f070033
-			public const int open_drawer = 2131165235;
+			// aapt resource value: 0x7f070035
+			public const int open_drawer = 2131165237;
 			
 			// aapt resource value: 0x7f070025
 			public const int prompt_password = 2131165221;

@@ -30,12 +30,18 @@ namespace XamProjectTest.service
         [Get("/projects/{pk}/")]
         Task<Project> getProject([Header("Authorization")] string authorization, int pk);
 
+        //End point to update an existing project
+        [Put("/projects/{pk}/")]
+        Task<Project> updateProject([Header("Authorization")] string authorization, int pk, [Body] Project project);
+
         //End point to insert or create a new project
         [Post("/projects/")]
         Task<Project> createProject([Header("Authorization")] string authorization, [Body] Project project);
 
-        //End point to update an existing project
-        [Put("/projects/")]
-        Task<Project> updateProject([Header("Authorization")] string authorization, [Body] Project project);
+        //End point to delete project
+        [Delete("/projects/{pk}/")]
+        Task<string> deleteProject([Header("Authorization")] string authorization, int pk);
+
+
     }
 }
